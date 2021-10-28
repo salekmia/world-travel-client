@@ -31,3 +31,7 @@ First, I install react router and setup it on app.js. And connect some pages wit
 <h3>Font Awesome:</h3>
 
 To interective this project I use some icon from fontaweome.com.
+
+<h3>Firebase:</h3>
+
+I include firebase authentication in react project. There are two type authentication. One is email-password sign in and another is google sign in method.
