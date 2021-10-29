@@ -1,12 +1,15 @@
 import React from 'react';
 import Footer from '../../shared/Footer/Footer';
 import Header from '../../shared/Header/Header';
+import Services from '../Services/Services';
+import Banner from './Banner/Banner';
 import './Home.css';
 const Home = () => {
     return (
         <div>
             <Header></Header>
-            <h2>This is home</h2>
+            <Banner></Banner>
+            <Services></Services>
             <Footer></Footer>
         </div>
     );

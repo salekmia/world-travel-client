@@ -38,9 +38,9 @@ const Footer = () => {
                     <div className="col-sm-6 col-md-3 my-3">
                         <ul>
                             <img src={logo} alt="" />
-                            <li><i class="fas fa-phone me-3"></i><a href="/">01859650251</a></li>
-                            <li><i class="fas fa-envelope me-3"></i><a href="/">bhairabbari330@gmail.com</a></li>
-                            <li><i class="fas fa-map-marker-alt me-3"></i><a href="/">Bhairab, Dhaka, Bangladesh</a></li>
+                            <li><i className="fas fa-phone me-3"></i><a href="/">01859650251</a></li>
+                            <li><i className="fas fa-envelope me-3"></i><a href="/">bhairabbari330@gmail.com</a></li>
+                            <li><i className="fas fa-map-marker-alt me-3"></i><a href="/">Bhairab, Dhaka, Bangladesh</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,10 +51,10 @@ const Footer = () => {
                     </div>
                     <div className="col-sm-6">
                         <ul className="d-flex align-items-center social-icon justify-content-center justify-content-sm-end">
-                            <li><a href="/"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="/"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="/"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="/"><i className="fab fa-facebook-f"></i></a></li>
+                            <li><a href="/"><i className="fab fa-twitter"></i></a></li>
+                            <li><a href="/"><i className="fab fa-instagram"></i></a></li>
+                            <li><a href="/"><i className="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
