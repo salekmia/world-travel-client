@@ -16,17 +16,17 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav m-0 p-0 ms-auto mb-2 mb-lg-0 d-flex align-items-center">
-                        {user?.email && <li className="nav-item">
-                            <Link className="text-decoration-none mx-2 text-white" to="addservice">Add Service</Link>
-                        </li>}
+                        <li className="nav-item">
+                            <Link className="text-decoration-none mx-2 text-white" to="/addservice">Add Service</Link>
+                        </li>
 
-                        {user?.email && <li className="nav-item">
-                            <Link className="text-decoration-none mx-2 text-white" to="allbooking">Manage All Booking</Link>
-                        </li>}
+                        <li className="nav-item">
+                            <Link className="text-decoration-none mx-2 text-white" to="/allbooking">Manage All Booking</Link>
+                        </li>
 
-                        {user?.email && <li className="nav-item">
+                        <li className="nav-item">
                             <Link className="text-decoration-none mx-2 text-white" to="/mybooking">My Booking</Link>
-                        </li>}
+                        </li>
 
                         {!user?.email && <Link to="/login"><button className="btn btn-primary mx-2">Login</button></Link>}
                         

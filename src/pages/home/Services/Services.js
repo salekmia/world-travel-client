@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css';
 
 const Services = () => {
@@ -24,10 +25,10 @@ const Services = () => {
                             <img src={service?.img} className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">{service?.name}</h5>
-                                <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p className="card-text">{service?.description}</p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <h5>Price: {service?.price} TK</h5>
-                                    <button className="btn btn-outline-primary">Booking now</button>
+                                    <Link to={`/booking/${service?._id}`} ><button className="btn btn-outline-primary">Booking now</button></Link>
                                 </div>
                             </div>
                         </div>
