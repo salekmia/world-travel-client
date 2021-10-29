@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
+import AddService from "./pages/AddService/AddService";
 import Home from './pages/home/Home/Home';
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
@@ -23,6 +24,10 @@ function App() {
 
           <Route path="/register">
             <Register></Register>
+          </Route>
+
+          <Route path="/addservice">
+            <AddService></AddService>
           </Route>
 
         </Switch>

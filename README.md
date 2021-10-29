@@ -35,3 +35,7 @@ To interective this project I use some icon from fontaweome.com.
 <h3>Firebase:</h3>
 
 I include firebase authentication in react project. There are two type authentication. One is email-password sign in and another is google sign in method.
+
+<h3>Firebase:</h3>
+
+For create a form I used react hook form. Becouse it's very easy and it save a lot of time. If I use react hook form I don't have to use useState to take every single input value.
