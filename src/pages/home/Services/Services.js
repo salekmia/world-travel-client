@@ -25,7 +25,10 @@ const Services = () => {
                             <div className="card-body">
                                 <h5 className="card-title">{service?.name}</h5>
                                 <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <button className="btn btn-outline-primary">Booking now</button>
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <h5>Price: {service?.price} TK</h5>
+                                    <button className="btn btn-outline-primary">Booking now</button>
+                                </div>
                             </div>
                         </div>
                     </div>)

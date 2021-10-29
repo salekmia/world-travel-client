@@ -36,6 +36,9 @@ To interective this project I use some icon from fontaweome.com.
 
 I include firebase authentication in react project. There are two type authentication. One is email-password sign in and another is google sign in method.
 
-<h3>Firebase:</h3>
+<h3>React hook form:</h3>
 
 For create a form I used react hook form. Becouse it's very easy and it save a lot of time. If I use react hook form I don't have to use useState to take every single input value.
+
+<h3>CRUD:</h3>
+Post method is one of the importent method in CRUD operation. You can insert services from client site. And it's totally dynamic. It's pretty coll right?

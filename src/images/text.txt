@@ -1,2 +1,19 @@
 all photos url
 banner: https://i.ibb.co/XCJ5QyX/banner.jpg
+
+blog:
+https://i.ibb.co/X4gxjxT/blog1.jpg
+https://i.ibb.co/vjfL00c/blog2.jpg
+https://i.ibb.co/PFJNcmC/blog3.jpg
+https://i.ibb.co/ncSygNr/blog4.jpg
+https://i.ibb.co/mcXvy7X/blog5.jpg
+
+
+service:
+https://i.ibb.co/mcXvy7X/blog5.jpghttps://i.ibb.co/gTFxBrd/travel1.jpg
+https://i.ibb.co/ZKXhczg/travel2.jpg
+https://i.ibb.co/BsvSct8/travel3.jpg
+https://i.ibb.co/rQmg7Bq/travel4.jpg
+https://i.ibb.co/Xpc11Lk/travel5.jpg
+https://i.ibb.co/5YFbzq4/travel6.jpg
+https://i.ibb.co/6XWvXJ4/travel7.jpg
