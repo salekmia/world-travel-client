@@ -5,7 +5,7 @@ import './AllBooking.css';
 const AllBooking = () => {
     const [bookings, setBookings] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://serene-retreat-12472.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => {
             setBookings(data)
@@ -15,7 +15,7 @@ const AllBooking = () => {
     const handleDelet = (id) => {
         const procced = window.confirm('Are you sure? You want to delete.')
         if(procced) {
-            const url = `http://localhost:5000/bookings/${id}`
+            const url = `https://serene-retreat-12472.herokuapp.com/bookings/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

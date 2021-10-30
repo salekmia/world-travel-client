@@ -44,9 +44,9 @@ function App() {
             <AllBooking></AllBooking>
           </PrivateRoute>
 
-          <Route path="/mybooking">
+          <PrivateRoute path="/mybooking">
             <Mybooking></Mybooking>
-          </Route>
+          </PrivateRoute>
 
         </Switch>
       </Router>

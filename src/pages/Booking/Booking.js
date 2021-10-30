@@ -11,7 +11,7 @@ const Booking = () => {
     const [service, setService] = useState({})
     const {img, name, description, price} = service;
     useEffect(() => {
-        const url = `http://localhost:5000/services/${serviceId}`
+        const url = `https://serene-retreat-12472.herokuapp.com/services/${serviceId}`
         fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -27,7 +27,7 @@ const Booking = () => {
         data.description = description
         data.price = price
         data.status = 'Pending'
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://serene-retreat-12472.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': "application/json"

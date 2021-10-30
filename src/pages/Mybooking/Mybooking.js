@@ -7,7 +7,7 @@ const Mybooking = () => {
     const {user} = useFirebase()
     const [allbookings, setAllbookings] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://serene-retreat-12472.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => {
             setAllbookings(data)
@@ -22,7 +22,7 @@ const Mybooking = () => {
     const handleDelet = (id) => {
         const procced = window.confirm('Are you sure? You want to delete.')
         if(procced) {
-            const url = `http://localhost:5000/bookings/${id}`
+            const url = `https://serene-retreat-12472.herokuapp.com/bookings/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
