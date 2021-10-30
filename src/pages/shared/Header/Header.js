@@ -15,18 +15,31 @@ const Header = () => {
                     <span className="navbar-toggler-icon text-white fs-3"><i className="fas fa-bars"></i></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav m-0 p-0 ms-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <ul className="navbar-nav m-0 p-0 ms-auto mb-2 mb-lg-0 d-flex align-items-center custom-nav">
+
                         <li className="nav-item">
-                            <Link className="text-decoration-none mx-2 text-white" to="/addservice">Add Service</Link>
+                            <Link className="mx-2" to="/">Home</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link className="text-decoration-none mx-2 text-white" to="/allbooking">Manage All Booking</Link>
+                            <Link className="mx-2" to="/about">About</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link className="text-decoration-none mx-2 text-white" to="/mybooking">My Booking</Link>
+                            <Link className="mx-2" to="/gallary">Gallary</Link>
                         </li>
+
+                        {user?.email && <li className="nav-item">
+                            <Link className="mx-2" to="/addservice">Add Service</Link>
+                        </li>}
+
+                        {user?.email && <li className="nav-item">
+                            <Link className="mx-2" to="/allbooking">Manage All Booking</Link>
+                        </li>}
+
+                        {user?.email && <li className="nav-item">
+                            <Link className="mx-2" to="/mybooking">My Booking</Link>
+                        </li>}
 
                         {!user?.email && <Link to="/login"><button className="btn btn-primary mx-2">Login</button></Link>}
                         

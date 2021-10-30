@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import AuthProvider from "./contexts/AuthProvider";
+import About from "./pages/About/About";
 import AddService from "./pages/AddService/AddService";
 import AllBooking from "./pages/AllBooking/AllBooking";
 import Booking from "./pages/Booking/Booking";
@@ -22,6 +23,10 @@ function App() {
 
           <Route exact path="/home">
             <Home></Home>
+          </Route>
+
+          <Route path="/about">
+            <About></About>
           </Route>
 
           <Route path="/login">

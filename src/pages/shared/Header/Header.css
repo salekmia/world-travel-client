@@ -1,4 +1,12 @@
 #header {
     background-color: #262626;
+}
+.custom-nav li a {
+    text-decoration: none;
+    margin-bottom: 6px;
+    color: rgb(167, 167, 167)
+}
+.custom-nav li a:hover {
+    text-decoration: underline;
     color: #fff;
 }
