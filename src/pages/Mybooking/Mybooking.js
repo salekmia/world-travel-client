@@ -81,7 +81,7 @@ const Mybooking = () => {
                         </tr>
                         <tr>
                         <td>Email:</td>
-                        <td>{myDetails?.email}</td>
+                        <td>{myDetails?.email || user?.email}</td>
                         </tr>
                         <tr>
                         <td>Phone:</td>

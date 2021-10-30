@@ -51,7 +51,7 @@ const Header = () => {
                         
                         {user?.email && <button  onClick={logOut} className="btn btn-primary mx-2">Log out</button>}
 
-                        {user?.email && <span>{user?.displayName}</span>}
+                        {user?.email && <span class="text-white">{user?.displayName}</span>}
                     </ul>
                     </div>
                 </div>

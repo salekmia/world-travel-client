@@ -51,3 +51,11 @@ For create a form I used react hook form. Becouse it's very easy and it save a l
 
 <h3>CRUD:</h3>
 Post method is one of the importent method in CRUD operation. You can insert services from client site. And it's totally dynamic. It's pretty coll right?
+
+<h3>Error handling:</h3>
+If you want to do a project, you have to read many problems. They have to be solved gradually. I also faced some problems while doing this project. E.g.
+
+* Brower reload issue
+* syntex error
+* type error
+
