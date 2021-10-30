@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import LightSpeed from 'react-reveal/LightSpeed';
 import './Blogs.css';
 
 const Blogs = () => {
@@ -13,14 +14,17 @@ const Blogs = () => {
     
     return (
         <div className="container my-5">
+            <LightSpeed left>
             <div className="section-header">
                 <h3>Latest Blog</h3>
                 <p>Our moderator write blog for you</p>
             </div>
+            </LightSpeed>
             <div>
                 <div className="row row-cols-1 row-cols-md-2 g-4">
                     {
                         blogs.map(blog => 
+                        <LightSpeed bottom>
                         <div key={blog._id} className="col">
                             <div className="card border-0 shadow-lg mb-3" style={{maxWidth: '540px'}}>
                             <div className="row g-0 d-flex align-items-center">
@@ -38,7 +42,9 @@ const Blogs = () => {
                                 </div>
                             </div>
                             </div>
-                        </div>)
+                        </div>
+                        </LightSpeed>
+                        )
                     }
                 </div>
             </div>

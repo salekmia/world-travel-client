@@ -1,16 +1,18 @@
 import React from 'react';
+import Slide from 'react-reveal/Slide';
 import './Popular.css';
 
 const Popular = () => {
     return (
         <div>
             <div className="text-center mt-5">
-                <h2>Popular Tour</h2>
-                <p>See our most popular tour</p>
+                <Slide left><h2>Popular Tour</h2></Slide>
+                <Slide right><p>See our most popular tour</p></Slide>
             </div>
             <div id="popular" className="mb-5">
                 <div className="container">
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+                    <Slide left>
                     <div className="col px-5">
                         <div className="card h-100 border-0 rounded-0">
                         <img src="https://i.ibb.co/z8tZg86/Earth-and-sky-behind.jpg" className="card-img-top" alt="..."/>
@@ -20,6 +22,8 @@ const Popular = () => {
                         </div>
                         </div>
                     </div>
+                    </Slide>
+                    <Slide bottom>
                     <div className="col px-5">
                         <div className="card h-100 border-0 rounded-0">
                         <img src="https://i.ibb.co/jr9PH54/Group-of-people-white-water-rafting-The-raft-goes-through-a-big-rapid-on-Koprulu-Canyon-near-Antalya.jpg" className="card-img-top" alt="..."/>
@@ -29,15 +33,18 @@ const Popular = () => {
                         </div>
                         </div>
                     </div>
+                    </Slide>
+                    <Slide right>
                     <div className="col px-5">
                         <div className="card h-100 border-0 rounded-0">
-                        <img src="https://i.ibb.co/XsDpPPs/Hot-air-balloon.jpg" className="card-img-top" alt="..."/>
-                        <div className="card-body">
-                            <h5 className="card-title">Hot Air Balloning</h5>
-                            <p className="card-text">Hot air ballooning is the activity of flying hot air balloons. ... Since the balloon moves with the direction of the winds, the passengers feel absolutely no wind, except for brief periods during the flight when the balloon climbs or descends into air currents of different direction or speed.</p>
-                        </div>
+                            <img src="https://i.ibb.co/XsDpPPs/Hot-air-balloon.jpg" className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <h5 className="card-title">Hot Air Balloning</h5>
+                                <p className="card-text">Hot air ballooning is the activity of flying hot air balloons. ... Since the balloon moves with the direction of the winds, the passengers feel absolutely no wind, except for brief periods during the flight when the balloon climbs or descends into air currents of different direction or speed.</p>
+                            </div>
                         </div>
                     </div>
+                    </Slide>
                     </div>
                 </div>
             </div>

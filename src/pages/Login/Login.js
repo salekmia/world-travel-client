@@ -65,7 +65,7 @@ const Login = () => {
                                     <p><small>{error}</small></p>
                                     <br />
                                     
-                                    <input onClick={passwordLoginHandle} className="my-2 btn btn-danger rounded-pill px-4" type="submit" value="Login" />
+                                    <input onClick={passwordLoginHandle} className="my-2 btn btn-primary rounded-pill px-4" type="submit" value="Login" />
 
                                     <div className="d-flex align-items-center my-4">
                                         <div className="or-line w-100"></div>
@@ -74,7 +74,7 @@ const Login = () => {
                                     </div>
                                     
                                     <div className="d-grid gap-2">
-                                        <button onClick={googleLoginHandle} className="btn btn-sm btn-danger"><i className="fab fa-google"></i> Login with google</button>
+                                        <button onClick={googleLoginHandle} className="btn btn-sm btn-primary"><i className="fab fa-google"></i> Login with google</button>
 
                                         
                                     </div>

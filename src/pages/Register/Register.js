@@ -71,7 +71,7 @@ const Register = () => {
                                     <p><small>{error}</small></p>
                                     <br />
 
-                                    <input onClick={passwordSignUpHandle} className="my-2 btn btn-danger rounded-pill px-4" type="submit" value="Sing up" />
+                                    <input onClick={passwordSignUpHandle} className="my-2 btn btn-primary rounded-pill px-4" type="submit" value="Sing up" />
 
                                     <div className="d-flex align-items-center my-4">
                                         <div className="or-line w-100"></div>
@@ -79,7 +79,7 @@ const Register = () => {
                                         <div className="or-line w-100"></div>
                                     </div>
                                     <div className="d-grid gap-2">
-                                        <button onClick={googleLoginHandle} className="btn btn-sm btn-danger"><i className="fab fa-google"></i> Sign up with google</button>
+                                        <button onClick={googleLoginHandle} className="btn btn-sm btn-primary"><i className="fab fa-google"></i> Sign up with google</button>
 
                                     </div>
                                     <p className="m-4">Already have an account? <Link to="/login">Login</Link></p>

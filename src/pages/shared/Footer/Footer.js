@@ -51,10 +51,10 @@ const Footer = () => {
                     </div>
                     <div className="col-sm-6">
                         <ul className="d-flex align-items-center social-icon justify-content-center justify-content-sm-end">
-                            <li><a href="/"><i className="fab fa-facebook-f"></i></a></li>
-                            <li><a href="/"><i className="fab fa-twitter"></i></a></li>
-                            <li><a href="/"><i className="fab fa-instagram"></i></a></li>
-                            <li><a href="/"><i className="fab fa-linkedin-in"></i></a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/salekalways" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/codersalek" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/salekalways/" rel="noreferrer"><i className="fab fa-instagram"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/salekalways/" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>

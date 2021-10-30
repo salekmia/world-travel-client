@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 import { Link } from 'react-router-dom';
 import './Services.css';
 
@@ -13,14 +15,24 @@ const Services = () => {
     }, [])
     return (
         <div className="container">
-            <div className="section-header">
-                <h3>Our Services</h3>
-                <p>See our best services for you</p>
+            <Slide left>
+                <div className="section-header">
+                    <h3>Our Services</h3>
+                    <p>See our best services for you</p>
+                </div>
+            </Slide>
+            {services?.length === 0 ?
+            <div className="d-flex justify-content-center">
+                <div className="spinner-border text-primary" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </div>
             </div>
-            <div className="row row-cols-1 row-cols-md-3 g-4 my-3">
+            :
+                <div className="row row-cols-1 row-cols-md-3 g-4 my-3">
                 {
                     services.map(service => 
                     <div key={service._id} className="col">
+                        <Fade bottom>
                         <div className="card h-100">
                             <img src={service?.img} className="card-img-top" alt="..."/>
                             <div className="card-body">
@@ -32,9 +44,10 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
+                        </Fade>
                     </div>)
                 }
-            </div>
+            </div>}
         </div>
     );
 };

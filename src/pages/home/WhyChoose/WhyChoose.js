@@ -1,13 +1,18 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
+import RubberBand from 'react-reveal/RubberBand';
 import './WhyChoose.css';
 const WhyChoose = () => {
     return (
         <div className="container choose my-5">
+            <RubberBand>
             <div className="section-header">
                 <h3>Why Choose Us</h3>
                 <p>Some reason for choosing us</p>
             </div>
+            </RubberBand>
             <div className="row">
+                <Fade left>
                 <div className="col-md-6 col-lg-4 p-3">
                     <div className="row">
                         <div className="col-md-4">
@@ -19,6 +24,8 @@ const WhyChoose = () => {
                         </div>
                     </div>
                 </div>
+                </Fade>
+                <Fade bottom>
                 <div className="col-md-6 col-lg-4 p-3">
                     <div className="row">
                         <div className="col-md-4">
@@ -30,6 +37,8 @@ const WhyChoose = () => {
                         </div>
                     </div>
                 </div>
+                </Fade>
+                <Fade right>
                 <div className="col-md-6 col-lg-4 p-3">
                     <div className="row">
                         <div className="col-md-4">
@@ -41,6 +50,8 @@ const WhyChoose = () => {
                         </div>
                     </div>
                 </div>
+                </Fade>
+                <Fade left>
                 <div className="col-md-6 col-lg-4 p-3">
                     <div className="row">
                         <div className="col-md-4">
@@ -52,6 +63,8 @@ const WhyChoose = () => {
                         </div>
                     </div>
                 </div>
+                </Fade>
+                <Fade bottom>
                 <div className="col-md-6 col-lg-4 p-3">
                     <div className="row">
                         <div className="col-md-4">
@@ -63,6 +76,8 @@ const WhyChoose = () => {
                         </div>
                     </div>
                 </div>
+                </Fade>
+                <Fade right>
                 <div className="col-md-6 col-lg-4 p-3">
                     <div className="row">
                         <div className="col-md-4">
@@ -74,6 +89,7 @@ const WhyChoose = () => {
                         </div>
                     </div>
                 </div>
+                </Fade>
             </div>
         </div>
     );

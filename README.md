@@ -6,6 +6,14 @@ Backend or server site github code link [Bankend code](https://github.com/progra
 
 <h2 align="center">Tools for this project</h2>
 
+* This website helps to travel
+* Traveller find some blog and from this they can getter knowlenge.
+* Anyone know about the tourism
+* Anyone can find fun with travel
+* World Travle Team is a help minded team
+
+<h2 align="center">Tools for this project</h2>
+
 * HTML
 * CSS
 * Bootstrap
@@ -17,6 +25,7 @@ Backend or server site github code link [Bankend code](https://github.com/progra
 * Mongodb
 * React Router
 * React hook form
+* React-reveal
 
 <h2 align="center">Description</h2>
 
