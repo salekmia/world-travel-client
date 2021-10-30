@@ -1,0 +1,16 @@
+#popular {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.ibb.co/Rp456M9/aerial-view-of-the-beach-Playa-de-las-Gaviotas-and-north-east-coast-in-Tenerife-Canary-Islands-Spain.jpg");
+    padding: 100px 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-header h3 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.section-header p {
+    color: rgb(61, 61, 61);    
+}

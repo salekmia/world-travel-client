@@ -16,6 +16,9 @@ const Mybooking = () => {
     
     const filterBookings = allbookings.filter(booking => booking.email === user?.email)
 
+    const myDetails = filterBookings[0]
+    
+
     const handleDelet = (id) => {
         const procced = window.confirm('Are you sure? You want to delete.')
         if(procced) {
@@ -35,14 +38,16 @@ const Mybooking = () => {
         }
         
     }
-
+    
 
     return (
         <div>
             <Header></Header>
             <div className="container my-3">
-                <h2 className="text-center">My Booking</h2>
-                <div className="row row-cols-1 row-cols-md-4 g-4 my-3">
+                <div className="row">
+                <div className="col-md-8">
+                    <h3 className="text-center">My Booking</h3>
+                    <div className="row row-cols-1 row-cols-md-3 g-4 my-3">
                     {
                         filterBookings.map(booking => 
                             <div key={booking._id} className="col">
@@ -63,6 +68,33 @@ const Mybooking = () => {
                                 </div>
                             </div>)
                     }
+                </div>
+            </div>
+            <div className="col-md-4">
+                <div className="mx-5 mt-5 shadow-lg bg-white" style={{position: 'fixed'}}>
+                    <h3 className="text-center">My Details</h3>
+                    <table className="table">
+                    <tbody>
+                        <tr>
+                        <td>Name:</td>
+                        <td>{myDetails?.name || user?.displayName}</td>
+                        </tr>
+                        <tr>
+                        <td>Email:</td>
+                        <td>{myDetails?.email}</td>
+                        </tr>
+                        <tr>
+                        <td>Phone:</td>
+                        <td>{myDetails?.name || 'No phone found'}</td>
+                        </tr>
+                        <tr>
+                        <td>Address:</td>
+                        <td>{myDetails?.name || 'No address found'}</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
                 </div>
             </div>
             <Footer></Footer>

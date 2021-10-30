@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../../src/images/header_logo.png';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 import './Header.css';
 const Header = () => {
-    const {user, logOut} = useFirebase()
+    const {user, logOut} = useAuth()
     return (
         <div id="header" className="py-2">
             <div>

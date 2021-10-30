@@ -1,10 +1,11 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const {user} = useFirebase()
+    const {user} = useAuth()
+    
     return (
         <Route 
             {...rest}

@@ -1,15 +1,18 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
+import AuthProvider from "./contexts/AuthProvider";
 import AddService from "./pages/AddService/AddService";
 import AllBooking from "./pages/AllBooking/AllBooking";
 import Booking from "./pages/Booking/Booking";
 import Home from './pages/home/Home/Home';
 import Login from "./pages/Login/Login";
+import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
 import Mybooking from "./pages/Mybooking/Mybooking";
 import Register from "./pages/Register/Register";
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
         <Switch>
 
@@ -29,17 +32,17 @@ function App() {
             <Register></Register>
           </Route>
 
-          <Route path="/addservice">
+          <PrivateRoute path="/addservice">
             <AddService></AddService>
-          </Route>
+          </PrivateRoute>
 
-          <Route exact path="/booking/:serviceId">
+          <PrivateRoute exact path="/booking/:serviceId">
             <Booking></Booking>
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/allbooking">
+          <PrivateRoute path="/allbooking">
             <AllBooking></AllBooking>
-          </Route>
+          </PrivateRoute>
 
           <Route path="/mybooking">
             <Mybooking></Mybooking>
@@ -47,6 +50,7 @@ function App() {
 
         </Switch>
       </Router>
+      </AuthProvider>
     </div>
   );
 }

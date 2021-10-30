@@ -1,0 +1,30 @@
+.choose .choose-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #245ED8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose .choose-icon i {
+    font-size: 40px;
+    color: #fff;
+}
+.section-header {
+    border-left: 4px solid rgba(75, 75, 75, 0.505);
+    margin: 0;
+    padding: 0;
+    margin: 15px 0;
+    padding-left: 10px;
+}
+
+.section-header h3 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.section-header p {
+    color: rgb(61, 61, 61);    
+}
