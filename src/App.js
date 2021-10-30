@@ -5,6 +5,7 @@ import About from "./pages/About/About";
 import AddService from "./pages/AddService/AddService";
 import AllBooking from "./pages/AllBooking/AllBooking";
 import Booking from "./pages/Booking/Booking";
+import Contact from "./pages/Contact/Contact";
 import Home from './pages/home/Home/Home';
 import Login from "./pages/Login/Login";
 import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
@@ -27,6 +28,10 @@ function App() {
 
           <Route path="/about">
             <About></About>
+          </Route>
+
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
 
           <Route path="/login">

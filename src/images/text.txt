@@ -19,6 +19,9 @@ about:
 https://i.ibb.co/ZzYMR3Z/gds.jpg
 https://i.ibb.co/ZdzGB5R/team-triangle-1.png
 
+contact:
+https://i.ibb.co/BZjjrjh/contact.jpg
+
 service:
 https://i.ibb.co/mcXvy7X/blog5.jpghttps://i.ibb.co/gTFxBrd/travel1.jpg
 https://i.ibb.co/ZKXhczg/travel2.jpg
