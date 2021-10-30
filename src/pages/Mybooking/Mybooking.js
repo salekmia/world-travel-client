@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 import Footer from '../shared/Footer/Footer';
 import Header from '../shared/Header/Header';
 import './Mybooking.css';
 const Mybooking = () => {
-    const {user} = useFirebase()
+    const {user} = useAuth()
     const [allbookings, setAllbookings] = useState([])
     useEffect(() => {
         fetch('https://serene-retreat-12472.herokuapp.com/bookings')

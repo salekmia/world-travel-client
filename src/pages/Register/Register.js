@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import register from '../../../src/images/register.jpg';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 import Footer from '../shared/Footer/Footer';
 import Header from '../shared/Header/Header';
 import './Register.css';
 const Register = () => {
-    const {signInUsignGoogle, signUpUsingPassword, setUserName, setUser, user} = useFirebase()
+    const {signInUsignGoogle, signUpUsingPassword, setUserName, setUser, user} = useAuth()
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
