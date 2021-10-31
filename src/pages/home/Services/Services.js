@@ -37,7 +37,7 @@ const Services = () => {
                             <img src={service?.img} className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">{service?.name}</h5>
-                                <p className="card-text">{service?.description}</p>
+                                <p className="card-text">{service?.description.slice(0, 100)}</p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <h5>Price: {service?.price} TK</h5>
                                     <Link to={`/booking/${service?._id}`} ><button className="btn btn-outline-primary">Booking now</button></Link>

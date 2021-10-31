@@ -12,7 +12,7 @@ const AllBooking = () => {
         .then(data => {
             setBookings(data)
         })
-    }, [])
+    }, [bookings])
 
     const handleDelet = (id) => {
         const procced = window.confirm('Are you sure? You want to delete.')

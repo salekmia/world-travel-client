@@ -12,7 +12,7 @@ const Mybooking = () => {
         .then(data => {
             setAllbookings(data)
         })
-    }, [])
+    }, [allbookings])
     
     const filterBookings = allbookings.filter(booking => booking.email === user?.email)
 
@@ -32,7 +32,6 @@ const Mybooking = () => {
                 if(data.deletedCount) {
                     const remaining = filterBookings.filter(booking => booking._id !== id)
                     console.log(remaining)
-                    window.location.reload();
                 }
             })
         }
