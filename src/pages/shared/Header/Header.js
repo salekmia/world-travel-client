@@ -29,10 +29,6 @@ const Header = () => {
                             <Link className="mx-2" to="/contact">Contact</Link>
                         </li>
 
-                        <li className="nav-item">
-                            <Link className="mx-2" to="/gallary">Gallary</Link>
-                        </li>
-
                         {user?.email && <li className="nav-item">
                             <Link className="mx-2" to="/addservice">Add Service</Link>
                         </li>}
@@ -51,7 +47,7 @@ const Header = () => {
                         
                         {user?.email && <button  onClick={logOut} className="btn btn-primary mx-2">Log out</button>}
 
-                        {user?.email && <span class="text-white">{user?.displayName}</span>}
+                        {user?.email && <span className="text-white">{user?.displayName}</span>}
                     </ul>
                     </div>
                 </div>

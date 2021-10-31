@@ -7,7 +7,7 @@ const Mybooking = () => {
     const {user} = useAuth()
     const [allbookings, setAllbookings] = useState([])
     useEffect(() => {
-        fetch('https://serene-retreat-12472.herokuapp.com/bookings')
+        fetch('https://grisly-spirit-27656.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => {
             setAllbookings(data)
@@ -22,7 +22,7 @@ const Mybooking = () => {
     const handleDelet = (id) => {
         const procced = window.confirm('Are you sure? You want to delete.')
         if(procced) {
-            const url = `https://serene-retreat-12472.herokuapp.com/bookings/${id}`
+            const url = `https://grisly-spirit-27656.herokuapp.com/bookings/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -89,7 +89,7 @@ const Mybooking = () => {
                         </tr>
                         <tr>
                         <td>Address:</td>
-                        <td>{myDetails?.description || 'No address found'}</td>
+                        <td>{myDetails?.address || 'No address found'}</td>
                         </tr>
                     </tbody>
                     </table>

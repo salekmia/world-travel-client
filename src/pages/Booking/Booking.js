@@ -11,7 +11,7 @@ const Booking = () => {
     const [service, setService] = useState({})
     const {img, name, description, price} = service;
     useEffect(() => {
-        const url = `https://serene-retreat-12472.herokuapp.com/services/${serviceId}`
+        const url = `https://grisly-spirit-27656.herokuapp.com/services/${serviceId}`
         fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -27,7 +27,7 @@ const Booking = () => {
         data.description = description
         data.price = price
         data.status = 'Pending'
-        fetch('https://serene-retreat-12472.herokuapp.com/bookings', {
+        fetch('https://grisly-spirit-27656.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': "application/json"
@@ -36,6 +36,7 @@ const Booking = () => {
         })
         
         reset()
+        alert('Booking Success')
     };
 
     return (

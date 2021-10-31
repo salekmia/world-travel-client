@@ -1,11 +1,13 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Footer from '../shared/Footer/Footer';
 import Header from '../shared/Header/Header';
 import './AllBooking.css';
 const AllBooking = () => {
     const [bookings, setBookings] = useState([])
+    // const [singleBook, setSingleBook] = useState({})
     useEffect(() => {
-        fetch('https://serene-retreat-12472.herokuapp.com/bookings')
+        fetch('https://grisly-spirit-27656.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => {
             setBookings(data)
@@ -15,7 +17,7 @@ const AllBooking = () => {
     const handleDelet = (id) => {
         const procced = window.confirm('Are you sure? You want to delete.')
         if(procced) {
-            const url = `https://serene-retreat-12472.herokuapp.com/bookings/${id}`
+            const url = `https://grisly-spirit-27656.herokuapp.com/bookings/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -29,6 +31,43 @@ const AllBooking = () => {
             })
         }
     }
+
+
+    // handle update
+
+    // const handleUpdate = id => {
+    //     const url = `https://grisly-spirit-27656.herokuapp.com/bookings/${id}`
+    //     fetch(url)
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         // const newData = data.status = 'Approve';
+    //         // const updatedData = {address: data.address, name: data.name, description: data.description, email: data.email, img: data.img, message: data.message, phone: data.phone, price: data.price, product_name: data.product_name, status: newData, _id: data._id}
+    //         // setSingleBook(newData)
+    //         console.log(data)
+    //     })
+
+    //     fetch(url, {
+    //         method: 'PUT',
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify({name: 'salek', status: 'Approved'})
+    //     })
+    // }
+    // console.log(singleBook)
+
+    
+
+    // handle update
+    const handleApprove = id => {
+        const url = `https://grisly-spirit-27656.herokuapp.com/bookings/${id}`
+        axios.put(url, {
+            status: "Approved"
+        })
+        
+    }
+
+
 
     return (
         <div>
@@ -46,9 +85,11 @@ const AllBooking = () => {
                                     <h5 className="card-title">{booking?.product_name}</h5>
 
                                     <p className="card-text">{booking.description.slice(0, 30)}</p>
-
+                                    
+                                    <h6>Status: {booking?.status}</h6>
                                     <div className="d-flex justify-content-between align-items-center">
-                                        <h6>Status: {booking?.status}</h6>
+                                        <button onClick={() => handleApprove(booking?._id)} className="btn btn-outline-primary btn-sm">Approve</button>
+                                        
                                         <button onClick={() => handleDelet(booking?._id)} className="btn btn-outline-primary btn-sm">Delete</button>
                                     </div>
 

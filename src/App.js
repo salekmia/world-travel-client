@@ -10,6 +10,7 @@ import Home from './pages/home/Home/Home';
 import Login from "./pages/Login/Login";
 import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
 import Mybooking from "./pages/Mybooking/Mybooking";
+import NotFound from "./pages/NotFound/NotFound";
 import Register from "./pages/Register/Register";
 function App() {
   return (
@@ -57,6 +58,10 @@ function App() {
           <PrivateRoute path="/mybooking">
             <Mybooking></Mybooking>
           </PrivateRoute>
+
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
 
         </Switch>
       </Router>
