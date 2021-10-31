@@ -15,7 +15,7 @@ const AllBooking = () => {
     }, [bookings])
 
     const handleDelet = (id) => {
-        const procced = window.confirm('Are you sure? You want to delete.')
+        const procced = window.confirm('Be careful! You are going to delete it.')
         if(procced) {
             const url = `https://grisly-spirit-27656.herokuapp.com/bookings/${id}`
             fetch(url, {
@@ -60,11 +60,13 @@ const AllBooking = () => {
 
     // handle update
     const handleApprove = id => {
-        const url = `https://grisly-spirit-27656.herokuapp.com/bookings/${id}`
-        axios.put(url, {
-            status: "Approved"
-        })
-        
+        const procced = window.confirm('You are going to approve it!')
+        if(procced) {
+            const url = `https://grisly-spirit-27656.herokuapp.com/bookings/${id}`
+            axios.put(url, {
+                status: "Approved"
+            })
+        }
     }
 
 

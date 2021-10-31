@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import Footer from '../shared/Footer/Footer';
 import Header from '../shared/Header/Header';
@@ -46,6 +47,8 @@ const Mybooking = () => {
                 <div className="row">
                 <div className="col-md-8">
                     <h3 className="text-center">My Booking</h3>
+                    {filterBookings.length === 0 && <p className="text-danger text-center">You don't book any package.</p>}
+                    {filterBookings.length === 0 && <Link to="/" className="text-center text-primary d-block">Go to home to book now</Link>}
                     <div className="row row-cols-1 row-cols-md-3 g-4 my-3">
                     {
                         filterBookings.map(booking => 
@@ -70,7 +73,7 @@ const Mybooking = () => {
                 </div>
             </div>
             <div className="col-md-4">
-                <div className="mx-5 mt-5 shadow-lg bg-white" style={{position: 'fixed'}}>
+                {filterBookings.length > 0 && <div className="mx-5 mt-5 shadow-lg bg-white" style={{position: 'fixed'}}>
                     <h3 className="text-center">My Details</h3>
                     <table className="table">
                     <tbody>
@@ -92,7 +95,7 @@ const Mybooking = () => {
                         </tr>
                     </tbody>
                     </table>
-                </div>
+                </div>}
             </div>
                 </div>
             </div>
