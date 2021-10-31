@@ -85,11 +85,11 @@ const Mybooking = () => {
                         </tr>
                         <tr>
                         <td>Phone:</td>
-                        <td>{myDetails?.name || 'No phone found'}</td>
+                        <td>{myDetails?.phone || 'No phone found'}</td>
                         </tr>
                         <tr>
                         <td>Address:</td>
-                        <td>{myDetails?.name || 'No address found'}</td>
+                        <td>{myDetails?.description || 'No address found'}</td>
                         </tr>
                     </tbody>
                     </table>
