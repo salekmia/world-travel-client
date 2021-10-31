@@ -14,6 +14,7 @@ const AddService = () => {
             body: JSON.stringify(data)
         })
         console.log(data)
+        alert('Service added successful!')
         reset()
     };
     return (
@@ -24,16 +25,16 @@ const AddService = () => {
                 <form className="my-2" onSubmit={handleSubmit(onSubmit)}>
                     <h3 className="text-center">Add Services</h3>
                                 
-                    <input className="my-2 w-100" type="text" placeholder="Name" {...register("name")} />
+                    <input className="my-2 w-100" type="text" placeholder="Name" {...register("name", { required: true })} />
                     <br />
                     
-                    <input className="my-2 w-100" type="number" placeholder="Price" {...register("price")} />
+                    <input className="my-2 w-100" type="number" placeholder="Price" {...register("price", { required: true })} />
                     <br />
 
-                    <textarea className="my-2 w-100" type="text" placeholder="Description" {...register("description")} cols="30" rows="5"></textarea>
+                    <textarea className="my-2 w-100" type="text" placeholder="Description" {...register("description", { required: true })} cols="30" rows="5"></textarea>
                     <br />
 
-                    <input className="my-2 w-100" type="text" placeholder="Image URL" {...register("img")} />
+                    <input className="my-2 w-100" type="text" placeholder="Image URL" {...register("img", { required: true })} />
                     
                     <br />
                     <div className="d-grid">
