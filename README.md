@@ -4,11 +4,14 @@ Project live site link [World Travel](https://world-travel-assignment-11.web.app
 
 Backend or server site github code link [Bankend code](https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-salekmia).
 
-<h2 align="center">Tools for this project</h2>
+<h2 align="center">Features</h2>
 
-* This website helps to travel
+* Allowing users to create accounts, browse packages, book packages and manage all
+services that he booked. Users also delete services from his booking services.
+* There are options for admin to add services and manage services.
+* Users will be able to know about the services by visiting the about page and contact with
+manager or admin by visiting the contact us page.
 * Traveller find some blog and from this they can getter knowlenge.
-* Anyone know about the tourism
 * Anyone can find fun with travel
 * World Travle Team is a help minded team
 
